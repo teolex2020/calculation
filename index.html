@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="ccc.css/main.css" />
+
+    
+
+  </head>
+  <body>
+    <button class="button__popup"><a href="#popup" class = "header__phone popup-link">Автор</a></button>
+    <div ><a href="https://uiamp.org.ua/">
+      <img  class="yip__popup" src="./imagas/96816741_1030760013987049_8195900415225626624_n.png" alt=""></a>
+    </div>
+
+    <div id = "popup" class="popup">
+      <div class="popur__body">
+        <div class="popup__content">
+          <a href="#" class="popup__close">Закрити</a>
+          <img src="./imagas/10620170_1004358689618704_9043094057406513483_o.jpg" alt="" class="popup__img">
+          <div class="popup__title"><h2>Теплюк Олександр Миколайович</h2></div>
+          <div class="popup__text"><p><h3>Автор та розробник калькулятора моделювання кількості депутатських мандатів. ВИБОРИ 2020.</h3><h4></h4></p>Виконавчий директор в ГО <b>"Український Інститут політики"</b> з виборчих технологій і політконсалтингу; <br><br> Голова ГО <b> "Всеукраїнський оперативний виборчий Комітет";</b> <br><br><b>Політтехнолог.</b></div>
+     <div class="popular__contact"><p><b>конт.тел. 098-456-84-41</p><p>e-mail. teolex2017@gmail.com</p><p>https://www.facebook.com/O.Teplyk</b></p></div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <div class="intro" >
+      
+      <!-- калькулятор -->
+      <div class="cont">
+        <div class="head">
+          <h1>
+            Калькулятор моделювання кількості депутатських мандатів. ВИБОРИ 2020
+          </h1>
+          <h3 class="h3vk">(калькулятор не включає додаткові мандати по дробовим залишкам ст.260 ВК)</h3>
+        </div>
+
+        <div class="enter">
+          <div class="borderAll">
+            <h3>Кількість виборців (загальна)</h3>
+
+            <input
+              placeholder="Введіть дані"
+              type="number"
+              class="numberOne inputNumber"
+              value=""
+              id="number-voit"
+              required=""
+            />
+          </div>
+
+          <div class="borderAll">
+            <h3>Кількість мандатів в раді</h3>
+
+            <input
+              placeholder="Введіть дані"
+              type="number"
+              class="numberOne inputNumber"
+              value=""
+              id="number-voitone-manda"
+              required
+            />
+          </div>
+
+          <div class="borderAll">
+            <h3>Явка (%)</h3>
+
+            <input
+              placeholder="Введіть дані"
+              type="number"
+              class="numberOne inputNumber"
+              value=""
+              id="number-voitone"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="center">
+          <div class="borderAll">
+            <h3>Кількість голосів, відданих за партії, що подолали 5%</h3>
+
+            <input
+              placeholder="Введіть дані"
+              type="number"
+              class="numberOne inputNumber"
+              value=""
+              id="number-voitone-five"
+            />
+          </div>
+
+          <div class="borderAll">
+            <h3>Кількість гарантованих мандатів</h3>
+
+            <input
+              placeholder="Введіть дані"
+              type="number"
+              class="numberOne inputNumber"
+              value=""
+              id="number-voitone-garant"
+            />
+          </div>
+
+          <div class="borderAll">
+            <h3>Відсоток, відданий за партію</h3>
+
+            <input
+              placeholder="Введіть дані"
+              type="number"
+              class="numberOne inputNumber"
+              value=""
+              id="number-voitone-org"
+            />
+          </div>
+
+          <div class="borderAll">
+            <h3>Кількість виборців на територіальному окрузі</h3>
+
+            <input
+              placeholder="Введіть дані"
+              type="number"
+              class="numberOne inputNumber"
+              value=""
+              id="number-voitone-okrug"
+            />
+          </div>
+          <button class="a" type="reset" id="buttonOne1">Очистити</button>
+        </div>
+
+        <!-- //////////////result///////////////////          -->
+
+        <div class="exist">
+          <div class="">
+            <h3>Прохідні 5%</h3>
+            <div class="numberTwo" value="" id="number-two">
+              0.00
+            </div>
+            <!-- <button id="buttonOnefive butto">Порахувати</button> -->
+            <hr />
+          </div>
+
+          <div class="">
+            <h3>Квота за 1 мандат</h3>
+            <div class="numberTwo" value="" id="number-three">0.00</div>
+            <!-- <button id="buttonOnenumber">Порахувати</button> -->
+            <hr />
+          </div>
+          <div class="">
+            <h3>Бар'єр (25%)</h3>
+            <div class="numberTwo" value="" id="number-four">0.00</div>
+            <!-- <button id="buttonTwo ">Порахувати</button> -->
+            <hr />
+          </div>
+
+          <div class="">
+            <h3>Кількість отриманих голосів на територіальному окрузі</h3>
+            <div class="numberTwo" value="" id="number-five">0.00</div>
+            <!-- <button id="buttonThree">Порахувати</button> -->
+            <hr />
+          </div>
+
+          <div class="">
+            <h3>Кількість отриманих мандатів на територіальному окрузі</h3>
+            <div class="numberTwo" value="" id="number-okr">0.00</div>
+            <!-- <button id="buttonThree">Порахувати</button> -->
+            <hr />
+          </div>
+
+          <button class="button-result" id="butto">Порахувати</button>
+        </div>
+
+        <div class="footer" id="footer-one">
+          <div class="zag" id="name-form">
+            <h2>Розрахунок партійний на основі соціології</h2>
+          </div>
+          <!-- <button class="a" id="plus-div">Додати</button>
+          <button class="a" id="cleaner-div">Видалити</button> -->
+          <!-- nubmer one -->
+          <div class="footer-copy">
+            <div class="сonsignmentNumber distance">
+              <p>Номер</p>
+              <input class="hight nummer-distans" type="text" value="1" />
+            </div>
+
+            <div class="namConsignment distance">
+              <p>Назва партії</p>
+              <input class="hight" type="text" placeholder="Введіть дані"/>
+            </div>
+
+            <div class="percentConsignment distance">
+              <p>Відсоток</p>
+              <input class="hightprocent" type="number" id="percentOnr" placeholder="Введіть дані" />
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Гарантований мандат</p>
+              <output class="hightnumber" id="garantConsignmentOne">0</output>
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Кількість тих, хто проголосував</p>
+              <output class="hightnumber" id="numberConsignmentOne">0</output>
+            </div>
+
+            <div class="resultConsignment distance">
+              <p>Кількість мандатів</p>
+              <output class="hightmandat mleft" id="mandatConsignmentOne">0</output>
+            </div>
+            <!-- <div class="resultConsignment distance">
+              <p>Кількість додаткових мандатів</p>
+              <output class="hightmandat mleft" id="dodConsignmentOne">0</output>
+            </div> -->
+          </div>
+          <!-- nubmer one -->
+          <div class="footer-copy">
+            <div class="сonsignmentNumber distance">
+              <p>Номер</p>
+              <input class="hight nummer-distans" type="text" value="2" />
+            </div>
+
+            <div class="namConsignment distance">
+              <p>Назва партії</p>
+              <input class="hight" type="text" placeholder="Введіть дані"/>
+            </div>
+
+            <div class="percentConsignment distance">
+              <p>Відсоток</p>
+              <input
+                class="hightprocent"
+                type="number"
+                id="percentConsignmentTwo"
+                placeholder="Введіть дані"
+              />
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Гарантований мандат</p>
+              <output class="hightnumber" id="garantConsignmentTwo">0</output>
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Кількість тих, хто проголосував</p>
+              <output class="hightnumber" id="numberConsignmentTwo">0</output>
+            </div>
+
+            <div class="resultConsignment distance">
+              <p>Кількість мандатів</p>
+              <output class="hightmandat mleft" id="mandatConsignmentTwo">0</output>
+            </div>
+            <!-- <div class="resultConsignment distance">
+              <p>Кількість додаткових мандатів</p>
+              <output class="hightmandat mleft" id="dodConsignmentTwo">0</output>
+            </div> -->
+          </div>
+          <!-- nubmer one -->
+          <div class="footer-copy">
+            <div class="сonsignmentNumber distance">
+              <p>Номер</p>
+              <input class="hight nummer-distans" type="text" value="3" />
+            </div>
+
+            <div class="namConsignment distance">
+              <p>Назва партії</p>
+              <input class="hight" type="text" placeholder="Введіть дані" />
+            </div>
+
+            <div class="percentConsignment distance">
+              <p>Відсоток</p>
+              <input
+                class="hightprocent"
+                type="number"
+                id="percentConsignmentThree"
+                placeholder="Введіть дані"
+              />
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Гарантований мандат</p>
+              <output class="hightnumber" id="garantConsignmentThree">0</output>
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Кількість тих, хто проголосував</p>
+              <output class="hightnumber" id="numberConsignmentThree">0</output>
+            </div>
+
+            <div class="resultConsignment distance">
+              <p>Кількість мандатів</p>
+              <output class="hightmandat mleft" id="mandatConsignmentThree">0</output>
+            </div>
+            <!-- <div class="resultConsignment distance">
+              <p>Кількість додаткових мандатів</p>
+              <output class="hightmandat mleft" id="dodConsignmentThree">0</output>
+            </div> -->
+          </div>
+          <!-- nubmer one -->
+          <div class="footer-copy">
+            <div class="сonsignmentNumber distance">
+              <p>Номер</p>
+              <input class="hight nummer-distans" type="text" value="4" />
+            </div>
+
+            <div class="namConsignment distance">
+              <p>Назва партії</p>
+              <input class="hight" type="text" placeholder="Введіть дані"/>
+            </div>
+
+            <div class="percentConsignment distance">
+              <p>Відсоток</p>
+              <input
+                class="hightprocent"
+                type="number"
+                id="percentConsignmentFour"
+                placeholder="Введіть дані"
+              />
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Гарантований мандат</p>
+              <output class="hightnumber" id="garantConsignmentFour">0</output>
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Кількість тих, хто проголосував</p>
+              <output class="hightnumber" id="numberConsignmentFour">0</output>
+            </div>
+
+            <div class="resultConsignment distance">
+              <p>Кількість мандатів</p>
+              <output class="hightmandat mleft" id="mandatConsignmentFour">0</output>
+            </div>
+            <!-- <div class="resultConsignment distance">
+              <p>Кількість додаткових мандатів</p>
+              <output class="hightmandat mleft" id="dodConsignmentFour">0</output>
+            </div> -->
+          </div>
+          <!-- nubmer one -->
+          <div class="footer-copy">
+            <div class="сonsignmentNumber distance">
+              <p>Номер</p>
+              <input class="hight nummer-distans" type="text" value="5" />
+            </div>
+
+            <div class="namConsignment distance">
+              <p>Назва партії</p>
+              <input class="hight" type="text" placeholder="Введіть дані" />
+            </div>
+
+            <div class="percentConsignment distance">
+              <p>Відсоток</p>
+              <input
+                class="hightprocent"
+                type="number"
+                id="percentConsignmentfive"
+                placeholder="Введіть дані"
+              />
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Гарантований мандат</p>
+              <output class="hightnumber" id="garantConsignmentfive">0</output>
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Кількість тих, хто проголосував</p>
+              <output class="hightnumber" id="numberConsignmentfive">0</output>
+            </div>
+
+            <div class="resultConsignment distance">
+              <p>Кількість мандатів</p>
+              <output class="hightmandat mleft" id="mandatConsignmentfive">0</output>
+            </div>
+            <!-- <div class="resultConsignment distance">
+              <p>Кількість додаткових мандатів</p>
+              <output class="hightmandat mleft" id="dodConsignmentfive">0</output>
+            </div> -->
+          </div>
+          <!-- nubmer one -->
+          <div class="footer-copy">
+            <div class="сonsignmentNumber distance">
+              <p>Номер</p>
+              <input class="hight nummer-distans" type="text" value="6" />
+            </div>
+
+            <div class="namConsignment distance">
+              <p>Назва партії</p>
+              <input class="hight" type="text" placeholder="Введіть дані"/>
+            </div>
+
+            <div class="percentConsignment distance">
+              <p>Відсоток</p>
+              <input
+                class="hightprocent"
+                type="number"
+                id="percentConsignmentSix"
+                value=""
+                placeholder="Введіть дані"
+              />
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Гарантований мандат</p>
+              <output class="hightnumber" id="garantConsignmentSix">0</output>
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Кількість тих, хто проголосував</p>
+              <output class="hightnumber" id="numberConsignmentSix">0</output>
+            </div>
+         
+            <div class="resultConsignment distance">
+              <p>Кількість мандатів</p>
+              <output class="hightmandat mleft" id="mandatConsignmentSix">0</output>
+            </div>
+          
+            <!-- <div class="resultConsignment distance">
+              <p>Кількість додаткових мандатів</p>
+              <output class="hightmandat mleft" id="dodConsignmentSix">0</output>
+            </div> -->
+          </div>
+          <div class="oboloch">
+          <div id="close-open" class = "close-open"><h2 class="h2h">&#9650; &#9660;</h2></div>
+        </div>
+           <!-- nubmer one -->
+           <div class="closes">
+           <div class="footer-copy close">
+            <div class="сonsignmentNumber distance">
+              <p>Номер</p>
+              <input class="hight nummer-distans" type="text" value="7" />
+            </div>
+
+            <div class="namConsignment distance">
+              <p>Назва партії</p>
+              <input class="hight" type="text" placeholder="Введіть дані"/>
+            </div>
+
+            <div class="percentConsignment distance">
+              <p>Відсоток</p>
+              <input
+                class="hightprocent"
+                type="number"
+                id="percentConsignmentSeven"
+                value=""
+                placeholder="Введіть дані"
+              />
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Гарантований мандат</p>
+              <output class="hightnumber" id="garantConsignmentSeven">0</output>
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Кількість тих, хто проголосував</p>
+              <output class="hightnumber" id="numberConsignmentSeven">0</output>
+            </div>
+         
+            <div class="resultConsignment distance">
+              <p>Кількість мандатів</p>
+              <output class="hightmandat mleft" id="mandatConsignmentSeven">0</output>
+            </div>
+          
+            <!-- <div class="resultConsignment distance">
+              <p>Кількість додаткових мандатів</p>
+              <output class="hightmandat mleft" id="dodConsignmentSix">0</output>
+            </div> -->
+          </div>
+           <!-- nubmer one -->
+           <div class="footer-copy close">
+            <div class="сonsignmentNumber distance">
+              <p>Номер</p>
+              <input class="hight nummer-distans" type="text" value="8" />
+            </div>
+
+            <div class="namConsignment distance">
+              <p>Назва партії</p>
+              <input class="hight" type="text" placeholder="Введіть дані"/>
+            </div>
+
+            <div class="percentConsignment distance">
+              <p>Відсоток</p>
+              <input
+                class="hightprocent"
+                type="number"
+                id="percentConsignmentEight"
+                value=""
+                placeholder="Введіть дані"
+              />
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Гарантований мандат</p>
+              <output class="hightnumber" id="garantConsignmentEight">0</output>
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Кількість тих, хто проголосував</p>
+              <output class="hightnumber" id="numberConsignmentEight">0</output>
+            </div>
+         
+            <div class="resultConsignment distance">
+              <p>Кількість мандатів</p>
+              <output class="hightmandat mleft" id="mandatConsignmentEight">0</output>
+            </div>
+          
+            <!-- <div class="resultConsignment distance">
+              <p>Кількість додаткових мандатів</p>
+              <output class="hightmandat mleft" id="dodConsignmentSix">0</output>
+            </div> -->
+          </div>
+           <!-- nubmer one -->
+           <div class="footer-copy close">
+            <div class="сonsignmentNumber distance">
+              <p>Номер</p>
+              <input class="hight nummer-distans" type="text" value="9" />
+            </div>
+
+            <div class="namConsignment distance">
+              <p>Назва партії</p>
+              <input class="hight" type="text" placeholder="Введіть дані"/>
+            </div>
+
+            <div class="percentConsignment distance">
+              <p>Відсоток</p>
+              <input
+                class="hightprocent"
+                type="number"
+                id="percentConsignmentNine"
+                value=""
+                placeholder="Введіть дані"
+              />
+            </div>
+
+            <div class="numberConsignment distance">
+              <p >Гарантований мандат</p>
+              <output class="hightnumber" id="garantConsignmentNine">0</output>
+            </div>
+
+            <div class="numberConsignment distance">
+              <p >Кількість тих, хто проголосував</p>
+              <output class="hightnumber" id="numberConsignmentNine">0</output>
+            </div>
+         
+            <div class="resultConsignment distance">
+              <p>Кількість мандатів</p>
+              <output class="hightmandat mleft" id="mandatConsignmentNine">0</output>
+            </div>
+          
+            <!-- <div class="resultConsignment distance">
+              <p>Кількість додаткових мандатів</p>
+              <output class="hightmandat mleft" id="dodConsignmentSix">0</output>
+            </div> -->
+          </div>
+           <!-- nubmer one -->
+           <div class="footer-copy close">
+            <div class="сonsignmentNumber distance">
+              <p>Номер</p>
+              <input class="hight nummer-distans" type="text" value="10" />
+            </div>
+
+            <div class="namConsignment distance">
+              <p>Назва партії</p>
+              <input class="hight" type="text" placeholder="Введіть дані"/>
+            </div>
+
+            <div class="percentConsignment distance">
+              <p>Відсоток</p>
+              <input
+                class="hightprocent"
+                type="number"
+                id="percentConsignmentTen"
+                value=""
+                placeholder="Введіть дані"
+              />
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Гарантований мандат</p>
+              <output class="hightnumber" id="garantConsignmentTen">0</output>
+            </div>
+
+            <div class="numberConsignment distance">
+              <p>Кількість тих, хто проголосував</p>
+              <output class="hightnumber" id="numberConsignmentTen">0</output>
+            </div>
+         
+            <div class="resultConsignment distance">
+              <p>Кількість мандатів</p>
+              <output class="hightmandat mleft" id="mandatConsignmentTen">0</output>
+            </div>
+          
+            <!-- <div class="resultConsignment distance">
+              <p>Кількість додаткових мандатів</p>
+              <output class="hightmandat mleft" id="dodConsignmentSix">0</output>
+            </div> -->
+          </div>
+        </div>
+        <div class="resultConsignment distance">
+          <p >Кількість мандатів по квоті</p>
+          <output class="hightmandat mleft ress" id="mandatKvotaAll">0</output>
+        </div>
+          <div class="resultConsignment distance">
+            <p >Кількість гарантованих мандатів</p>
+            <output class="hightmandat mleft ress" id="mandatGarantAll">0</output>
+          </div>
+          <div class="resultConsignment distance">
+            <p >Кількість голосів, відданих за партії, що подолали 5 %</p>
+            <output class="hightmandat mleft ress" id="Allfivem">0</output>
+          </div>
+          
+        </div>
+       
+    </div>
+
+    <script src="java.js/calceletion.js"></script>
+  </body>
+</html>
